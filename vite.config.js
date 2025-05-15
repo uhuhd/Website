@@ -11,4 +11,8 @@ export default defineConfig({
     process.env.NODE_ENV === "production"
       ? "/Website/" // 你的仓库名
       : "/",
+  build: {
+    outDir: "dist",
+    emptyOutDir: true,
+  },
 });
